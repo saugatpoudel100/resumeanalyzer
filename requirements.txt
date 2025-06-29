@@ -1,0 +1,16 @@
+# Core Django framework
+Django==4.2.7
+
+# NLP and ML tools
+nltk==3.8.1
+scikit-learn==1.4.1.post1
+
+# Document parsers
+python-docx==1.1.0
+PyMuPDF==1.24.2  # (imported as fitz)
+
+# Optional: Useful if you use Pillow for image/media in future
+Pillow==10.3.0
+
+# If you're storing files locally via Django (already built-in)
+# No need for additional media storage unless you're using S3 etc.
