@@ -21,7 +21,7 @@ A smart resume analysis and matching tool built with **Python**, **Django**, and
 
 ## 📁 Project Structure
 
-ai_resume_analyzer/
+resumeanalyzer/
 ├── core/
 │ ├── models.py
 │ ├── forms.py
@@ -56,7 +56,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 📝 Running the App
-e
+
 # Apply database migrations
 python manage.py migrate
 
