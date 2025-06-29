@@ -1,0 +1,17 @@
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Upload Resume and Analyze</button>
+</form>
+
+{% if analysis %}
+  <h2>Resume Analysis</h2>
+  <p><strong>Skills:</strong> {{ analysis.skills|join:", " }}</p>
+  <p><strong>Education:</strong> {{ analysis.education|join:", " }}</p>
+  <p><strong>Experience (years):</strong> {{ analysis.experience_years }}</p>
+{% endif %}
+
+{% if match_percentage %}
+  <h2>Match Score</h2>
+  <p><strong>Resume vs Job Description Match:</strong> {{ match_percentage }}%</p>
+{% endif %}
